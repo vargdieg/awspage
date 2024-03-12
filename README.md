@@ -96,13 +96,13 @@ In the specify permissions choose JSON an paste this policy
 			"Sid": "S3ListBucket",
 			"Effect": "Allow",
 			"Action": ["s3:ListBucket"],
-			"Resource": "arn:aws:s3:::awsgithubupload"
+			"Resource": "arn:aws:s3:::<BUCKET_NAME>"
 		},
 		{
 		    "Sid": "S3UploadObjectToBucket",
 			"Effect": "Allow",
 			"Action": ["s3:PutObject"],
-			"Resource": "arn:aws:s3:::awsgithubupload/*"
+			"Resource": "arn:aws:s3:::<BUCKET_NAME>/*"
 		}
 	]
 }
