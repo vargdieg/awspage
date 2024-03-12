@@ -17,4 +17,3 @@ jobs:
           AWS_S3_BUCKET: awsgithubupload
           AWS_ACCESS_KEY_ID: ${{ secrets.ACCESS_TOKEN }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SECRET_TOKEN }}
-          SOURCE_DIR: ./main
