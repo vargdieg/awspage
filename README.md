@@ -57,6 +57,23 @@ An write down a file for the index an error
 
 At the bottom of the page select save changes
 
+In the S3 console select the created bucket, and then permissions, under bucket policy, check edit and paste
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "PublicReadGetObject",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::<BUCKET_NAME>/*"
+        }
+    ]
+}
+```
+
 ## Create an IAM User
 
 ### Create an Policy to allow user to S3
